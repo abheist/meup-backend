@@ -50,6 +50,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+AUTHENTICATION_BACKENDS = [
+    'graphql_jwt.backends.JSONWebTokenBackend',
+    'django.contrib.auth.backends.ModelBackend',
+]
+
 ROOT_URLCONF = 'meupBackend.urls'
 
 TEMPLATES = [
@@ -118,5 +123,8 @@ AUTH_USER_MODEL = 'users.User'
 STATIC_URL = '/static/'
 
 GRAPHENE = {
-    'SCHEMA': 'meupBackend.schema.schema'
+    'SCHEMA': 'meupBackend.schema.schema',
+    'MIDDLEWARE': [
+        'graphql_jwt.middleware.JSONWebTokenMiddleware',
+    ],
 }
