@@ -13,6 +13,7 @@ class Query(object):
     users = graphene.List(UserType)
     me = graphene.Field(UserType)
 
+    @login_required
     def resolve_users(self, info, **kwargs):
         return get_user_model().objects.all()
 
@@ -30,6 +31,7 @@ class CreateUser(graphene.Mutation):
         email = graphene.String(required=True)
         password = graphene.String(required=True)
 
+    @login_required
     def mutate(self, info, username, email, password):
         user = get_user_model()(
                 username=username,
