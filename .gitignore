@@ -339,3 +339,5 @@ pyvenv.cfg
 .venv
 pip-selfcheck.json
 
+!/.gitprefix
+.gitprefix
