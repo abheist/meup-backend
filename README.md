@@ -38,8 +38,9 @@ SENDGRID_SERVER_EMAIL="Abhishek <abhishek@abhiy.com>"
 SENDGRID_DEFAULT_FROM_EMAIL="Abhishek <abhishek@abiy.com>"
 ```
 
-Up untill now, everything might be working well, but have you tried registering a user. Yes the URL in a email template is going of Django server instead of Front-end. So for this,
+Up untill now, everything might be working well, but have you tried registering a user or requesting a password reset.<br>
+🥱 Yes, the URL in a email template is of Django server instead of Front-end. So for this:
 - Go to admin panel on: https://localhost:8000/admin
-- Click on site, as a default there will be `example.com`, replace that with your Front-end URL and Name
+- Click on `sites`, as a default there will be `example.com`, replace that with your Front-end URL `localhost:3000` and with your project Name
 
 Now you ready to rock-on 🤘
