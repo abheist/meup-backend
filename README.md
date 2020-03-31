@@ -24,6 +24,6 @@ Will use this as a base for other projects.
 5. Install the dependecies with: 
 > `pip install -r requirements.txt`
 6. Once installed, run server with: 
-> `python manage.py runserver`
-or you can use runserver plus for better debugging:
+> `python manage.py runserver` 
+<br> or you can use runserver plus for better debugging:<br>
 > `python manage.py runserver_plus`
