@@ -22,8 +22,7 @@ Will use this as a base for other projects.
 3. Make a new virtualenv, you can use `virtualenvWrapper`
 4. Get into project dir
 5. Install the dependecies with: 
-> `pip install -r requirements.txt`
-6. Once installed, run server with: 
-> `python manage.py runserver` 
-<br> or you can use runserver plus for better debugging:<br>
-> `python manage.py runserver_plus`
+`pip install -r requirements.txt`
+6. Once installed, run server with: `python manage.py runserver` 
+<br>or you can use runserver plus for better debugging:<br>
+`python manage.py runserver_plus`
