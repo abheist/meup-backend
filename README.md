@@ -35,7 +35,7 @@ EMAIL_PORT=587
 SENDGRID_USERNAME="abheist"
 SENDGRID_HOST="sendgrid-host"
 SENDGRID_SERVER_EMAIL="Abhishek <abhishek@abhiy.com>"
-SENDGRID_DEFAULT_FROM_EMAIL="Abhishek <abhishek@abiy.com>"
+SENDGRID_DEFAULT_FROM_EMAIL="Abhishek <abhishek@abhiy.com>"
 ```
 
 Up untill now, everything might be working well, but have you tried registering a user or requesting a password reset.<br>
