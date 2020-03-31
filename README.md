@@ -23,3 +23,16 @@ Will use this as a base for other projects.
 4. Get into project dir
 5. Install the dependecies with: `pip install -r requirements.txt`
 6. Once installed, run server with: `python manage.py runserver` or you can use runserver plus for better debugging `python manage.py runserver_plus`
+7. Setup env file:
+    - In a project root, make a file `.env`
+    - Paste the following keys into it and set your key values
+```
+SECRET_KEY="your-django-key"
+DEBUG=True
+SENDGRID_API_KEY="sendgrid-api-key"
+EMAIL_PORT=587
+SENDGRID_USERNAME="abheist"
+SENDGRID_HOST="sendgrid-host"
+SENDGRID_SERVER_EMAIL="Abhishek <abhishek@abhiy.com>"
+SENDGRID_DEFAULT_FROM_EMAIL="Abhishek <abhishek@abiy.com>"
+```
